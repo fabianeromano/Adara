@@ -26,6 +26,7 @@ color: #FFFFFC;
 /* Menu Responsive */
 .menu-responsive{
     background: #94A8A6;
+    z-index: 2;
 }
 
 .menu-cierre{

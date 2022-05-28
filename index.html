@@ -20,12 +20,14 @@
 <body>
     <!--Header con Img + Barra -->
     <header class="flex items-end justify-end h-14 lg:pr-16 md:h-24 header">
-        <div  class="mr-4 cursor-pointer lg:hidden ">
-            <span id="menuResponsiveBtn" class="w-12 h-12 iconify icon-menu" data-icon="eva:menu-outline"></span>
+        <div id="menuResponsiveBtn" class="mr-4 cursor-pointer lg:hidden ">
+            <span class="w-12 h-12 iconify icon-menu" data-icon="eva:menu-outline"></span>
         </div>
         <div id="menuDesplegable" class="hidden rounded-lg menu-responsive md:top-14 md:right-4 top-4 right-4 lg:hidden">
             <div class="flex flex-col ">
-                <span id="menuCierre" class="absolute w-8 h-8 iconify menu-cierre" data-icon="akar-icons:circle-x-fill"></span>
+                <div id="menuCierre">
+                    <span class="absolute w-8 h-8 iconify menu-cierre" data-icon="akar-icons:circle-x-fill"></span>
+                </div>
                 <a id="btn-1" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#tratamientos">Tratamientos</a>
             <a id="btn-2" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#aparatos">Aparatología</a>
             <a id="btn-3" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#productos">Productos</a>
