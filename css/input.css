@@ -76,7 +76,8 @@ color: #3C3C3C;
 }
 .img-slider{
     position: relative;
-    width: 100vw;
+    width: 98vw;
+    margin: 0 auto;
     height: 550px;
     background: #B2BBB7;
   }
