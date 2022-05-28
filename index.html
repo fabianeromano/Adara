@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adara Centro de Estetica</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/output.css">
+<!-- Animate -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header con Img + Barra -->
+    <header class="flex items-end justify-end h-14 lg:pr-16 md:h-24 header">
+        <div  class="mr-4 cursor-pointer lg:hidden ">
+            <span id="menuResponsiveBtn" class="w-12 h-12 iconify icon-menu" data-icon="eva:menu-outline"></span>
+        </div>
+        <div id="menuDesplegable" class="hidden rounded-lg menu-responsive md:top-14 md:right-4 top-4 right-4 lg:hidden">
+            <div class="flex flex-col ">
+                <span id="menuCierre" class="absolute w-8 h-8 iconify menu-cierre" data-icon="akar-icons:circle-x-fill"></span>
+                <a id="btn-1" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#tratamientos">Tratamientos</a>
+            <a id="btn-2" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#aparatos">Aparatología</a>
+            <a id="btn-3" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 menu-responsive-link" href="#productos">Productos</a>
+            <a id="btn-4" class="py-2 pl-4 text-base font-bold text-white md:text-xl md:pr-14 md:pl-8 md:py-3 pr-11 " href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex navBar">
+            <a class="py-2 text-2xl font-bold leading-7 link px-7" href="#tratamientos">Tratamientos</a>
+            <a class="py-2 text-2xl font-bold leading-7 link px-7" href="#aparatos">Aparatología</a>
+            <a class="py-2 text-2xl font-bold leading-7 link px-7" href="#productos">Productos</a>
+            <button class="p-8 py-2 text-xl font-semibold rounded-lg btn-nav"><a href="#contacto">Contacto</a></button>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Section Hero -->
+    <section class="grid grid-cols-3 heroSection">
+        <div class="flex items-end justify-center heroSection-left">
+            <img class="img-mujer" src="./imagenes/MujerSpa.png" alt="Imagen de Mujer">
+        </div>
+        <div class="col-span-2 my-auto pl-14 heroSection-right">
+                  <img class="w-2/3 heroSection-logo md:w-3/4 lg:w-1/2" src="./imagenes/AdaraLogo.png" alt="Adara Logo" data-aos="zoom-out-up" data-aos-duration="1500">
+                <h1 class="mt-4 mb-2 text-base font-light md:mb-4 md:mt-4 md:text-6xl hero-titulo">Centro de Estética Integral</h1>
+                <p class="text-xs md:pr-24 md:text-2xl hero-description font-extralight">Te asesoramos con los mejores tratamietos y productos. Tenemos pasión por lo
+                    que
+                    hacemos </p>
+        </div>
+    </section>
+    <!-- Fin Section Hero -->
+
+    <!-- Inicio Section Hero Foot -->
+    <div class="py-1 text-base font-normal text-center md:text-3xl heroFoot">
+        <h3>La primera consulta es <span>¡GRATIS!</span></h3>
+    </div>
+    <!-- Fin Section Hero Foot -->
+
+    <!-- Inicio Seccion tratamientos -->
+    <section id="tratamientos" class="my-8 md:my-20 section-tratamientos ">
+        <h2 class="text-lg font-semibold text-center md:text-5xl tituloSeccion">Tratamientos corporales y faciales</h2>
+        <!--Tratamientos Corporales-->
+        <article class="grid grid-cols-2 my-4 md:my-20 article1 " data-aos="fade-right">
+            <div class=" article1-left">
+                <img class="article1-img "  src="./imagenes/TratamientosCorporales.png" alt="">
+            </div>
+            <div class="flex flex-col items-start justify-center md:pl-14 article1-right">
+                <p class="text-base font-light md:text-5xl article1-titulo">Tratamientos corporales</p>
+                <p class="text-sm md:text-4xl article1-subtitulo font-extralight">Mujer y Hombre</p>
+                <ul class="pl-6 text-xs font-normal list-disc md:text-2xl article1-corporal">
+                    <li>Estrias</li>
+                    <li>Anticelulites</li>
+                    <li>Reductores</li>
+                    <li>Tonificación</li>
+                    <li>Piernas cansadas</li>
+                    <li>Modelamiento corporal</li>
+                    <li>Foliculits</li>
+                    <li>Limpieza y pulido corporal</li>
+                </ul>
+            </div>
+        </article>
+
+        <!--Tratamientos Faciales-->
+        <article class="grid grid-cols-2 my-4 md:my-14 article2" data-aos="fade-left">
+            <div class="md:order-last article2-right">
+                <img class="article2-right-img" src="./imagenes/TratamientosFaciales.png" alt="">
+            </div>
+            <div class="flex flex-col items-start justify-center md:pl-14 article2-left">
+                <p class="text-base font-light md:text-5xl article2-titulo">Tratamientos faciales</p>
+                <p class="text-sm md:text-4xl article2-subtitulo font-extralight">Mujer y Hombre</p>
+                <ul class="pl-6 text-xs font-normal list-disc md:text-2xl article2-facial">
+                    <li>Limpieza facial profunda</li>
+                    <li>Limpieza facial express</li>
+                    <li>Dermoplaning</li>
+                    <li>Nano dermapen</li>
+                    <li>Masaje facial tonificante</li>
+                    <li>Radiofrecuencia o crioterapia</li>
+                    <li>Peeling acne</li>
+                </ul>
+            </div>
+        </article>
+
+        <!--Tratamientos con Cera-->
+        <article class="grid grid-cols-2 my-4 md:my-14 article3" data-aos="fade-right">
+            <div class="article3-left">
+                <img class="imgCera" src="./imagenes/Depilacion.png" alt="Depilacion">
+            </div>
+            <div class="flex flex-col items-start justify-start md:pt-28 article3-right">
+                <p class="text-base md:text-5xl article3-titulo font-ligh">Depilación con cera y rollon</p>
+                <ul class="pl-6 text-xs font-normal list-disc md:text-2xl article3-cera">
+                    <li>Perfilado de cejas</li>
+                    <li>Axila, cavado, cara, piernas, brazos (Solo Mujer)</li>
+                </ul>
+            </div>
+        </article>
+        </div>
+
+    </section>
+    <!-- Fin Seccion tratamientos -->
+
+<!-- Inicio Carousel -->
+<h2 id="aparatos" class="mb-2 text-lg font-semibold text-center md:mb-8 md:text-5xl titulo-carousel">Aparatología</h2>
+<section class="img-slider">
+    <div class="slide active ">
+      <img src="./imagenes/img1.png" alt="">
+    </div>
+    <div class="slide ">
+        <img src="./imagenes/img2.png" alt="">
+      </div>
+      <div class="slide ">
+        <img src="./imagenes/img3.png" alt="">
+      </div>
+      
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+</section>
+<!-- Fin Carousel -->
+
+    <!--Inicio Seccion Marcas -->
+    <section id="productos" class="marcas md:my-28 my-14">
+        <h2 class="text-lg font-semibold text-center md:text-5xl marcas-titulo">Trabajamos con productos de calidad</h2>
+        <h3 class="mt-5 text-base font-light text-center md:text-3xl marcas-subtitulo">¡Es muy importante que consultes antes de
+            elegir un producto! </h3>
+        <h3 class="text-base font-light text-center md:text-3xl marcas-description">En Adara te asesoramos para que encuentres el
+            producto ideal para tu piel.</h3>
+        <div class="flex justify-center mt-12 img-marcas " data-aos="zoom-in">
+            <img class=" section-lidherma" src="./imagenes/Lidherma.png" alt="lidherma">
+            <img class=" section-idraet" src="./imagenes/Idraet.png" alt="idraet">
+            <img class=" section-exel" src="./imagenes/Exel.png" alt="exel">
+        </div>
+    </section>
+    <!-- Fin Seccion Marcas -->
+   
+
+    <!-- Inicio Seccion Turnos -->
+    <section class="flex items-center justify-center my-10 md:my-28 turnos">
+        <div class="w-full px-8 py-8 md:px-10 md:py-12 lg:w-3/4 cajaTurno lg:rounded-2xl">
+            <h4 class="text-lg font-normal md:text-5xl cajaTurno-titulo">Turnos</h4>
+            <p class="my-4 text-base font-light md:my-5 md:text-3xl cajaTurno-descripcion">Los turnos se piden únicamente con anticipación al
+                igual que la cancelación de
+                los
+                mismos (24hs de anticipación). En caso de no cancelar con anticipación el turno debe ser abonado</p>
+            <div class="button">
+                <button class="h-16 text-base font-semibold rounded-lg md:text-2xl btn-turno w-44">Pedir Turno</button>
+            </div>
+        </div>
+    </section>
+    <!-- Fin Seccion Turnos -->
+
+    <!-- Inicio Footer -->
+    <footer id="contacto" class="flex items-center justify-center h-40 md:h-56 footer">
+        <div class="flex items-center justify-between footer-left">
+            <div class="flex justify-end mr-6 md:mr-12 footer-logo">
+                <img src="./imagenes/AdaraLogoFooter.png" alt="Adara Logo">
+            </div>
+            <div class="flex icons-left">
+                <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+
+                <div class="ml-6 md:ml-12 icons-phone-mail">
+                    <div class="mb-2 icon-tel-box">
+                        <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-phone" data-icon="charm:phone"></span>
+                    </div>
+                    <div class="mt-2 icon-mail-box">
+                        <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-mail" data-icon="ci:mail"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between footer-center">
+            <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+            <div class="flex items-center justify-center w-5 h-5 bg-white rounded-full md:w-10 md:h-10 icon-insta-box">
+                <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-insta" data-icon="akar-icons:instagram-fill"></span>
+            </div>
+            <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+        </div>
+
+        <div class="flex items-center justify-center footer-right">
+            <img class="w-1/2 footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/LidhermaFooter.png" alt="">
+            <img class="w-1/2 footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/ExelFooter.png" alt="">
+            <img class="w-1/2 footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/IdraetFooter.png" alt="">
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+    
+    <!-- Script Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Script -->
+    <script src="./App.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+
+</html>

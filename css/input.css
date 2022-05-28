@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@layer base{
+    body{
+        font-family: 'Nunito';
+        background: #EEDCD6;
+    font-style: normal;
+    }
+}
+
+.header{
+    background: linear-gradient(90deg,#ebd4cc 40%, #eedcd6 60%);
+}
+.link{
+    color: #3C3C3C;
+}
+.btn-nav{
+    background: #94A8A6;
+    border: #94A8A6;
+color: #FFFFFC;
+}
+/* Menu Responsive */
+.menu-responsive{
+    background: #94A8A6;
+}
+
+.menu-cierre{
+    top: -12px;
+    right: -9px;
+    color: #3C3C3C;
+}
+.menu-responsive-link{
+    border-bottom: 1px solid rgba(60, 60, 60, 0.6);
+}
+
+/* Hero Section */
+.heroSection-left{
+    background: #e4c5bb;
+background: linear-gradient(90deg,#e4c5bb 40%, #eedcd6 80%);
+background: -webkit-linear-gradient(90deg,#e4c5bb 40%, #eedcd6 80%);
+background: -moz-linear-gradient(90deg,#e4c5bb 40%, #eedcd6 80%);
+}
+.hero-titulo{
+    color: #3C3C3C;
+}
+.heroSection-logo{
+    max-width: 250px;
+}
+
+/* Hero Foot */
+.heroFoot{
+color: #ECEBE8;
+background: linear-gradient(90deg, #94A8A6 0%, #688683 31.67%, #688683 48.06%, #688683 67.78%, #94A8A6 100%);
+}
+
+/* Seccion Tratamientos */
+.tituloSeccion{
+    color: #3C3C3C;
+}
+.article1-titulo, .article1-subtitulo, .article1-corporal{
+color: #3C3C3C;
+}
+.article2-titulo, .article2-subtitulo, .article2-facial{
+    color: #3C3C3C;
+}
+.article3-titulo, .article3-cera{
+    color: #3C3C3C;
+}
+/* Carousel */
+.titulo-carousel{
+    color: #3C3C3C;
+}
+.img-slider{
+    position: relative;
+    width: 100vw;
+    height: 550px;
+    background: #B2BBB7;
+  }
+  
+  .img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+  }
+  
+  .img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+  }
+  
+  .img-slider .slide img{
+    z-index: 1;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 1200px;
+  }
+
+  
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .img-slider .navigation .btn.active{
+    background: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+/* Seccion Marcas */
+.marcas-titulo, .marcas-subtitulo, .marcas-description{
+    color: #3C3C3C;
+}
+
+/* Turnos */
+.cajaTurno{
+    background: #FBEFEB;
+    opacity: 0.8;
+}
+.cajaTurno-titulo{
+color: #3C3C3C;
+}
+.cajaTurno-descripcion{
+    color: #3C3C3C;
+}
+.btn-turno{
+    background: #94A8A6;
+    border: #94A8A6;
+    color: #FFFFFC;
+}
+
+/* Footer */
+.footer{
+    background: #D7C0C6;
+}
+
+.icon-phone, .icon-mail, .icon-insta{
+    color: #8D8D8D;
+}
+.footer-left{
+width: 40vw;
+}
+.footer-center{
+    width: 20vw;
+}
+.footer-right{
+    width: 40vw;
+}
+.footer-logo{
+width: 50%;
+}
+.icons-left{
+    width: 50%;
+}
+.footer-marcas{
+    max-width: 100%;
+    width: 130px;
+}
+.footer-imgBarra{
+    max-height: 100%;
+    height: 44px;
+}
+/* Media queries */
+@media (max-width: 1024px){
+    .img-slider{
+        height: 500px;
+    }
+    .footer-marcas-img{
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px){
+    .section-lidherma, .section-idraet, .section-exel{
+        width: 30%;
+    }
+    .footer-marcas-img{
+        width: 30%;
+    }
+    .img-slider{
+        height: 400px;
+    }
+    .img-slider .slide img{
+        width: 100%;
+      }
+}
+
+@media (max-width: 620px){
+    .img-slider{
+        height: 350px;
+    }
+}
+@media (max-width: 425px){
+    .img-slider{
+        height: 250px;
+    }
+}
+
+@media (max-width: 375px){
+    .section-lidherma, .section-idraet, .section-exel{
+        width: 30%;
+    }
+    .footer-marcas-img{
+        width: 30%;
+    }
+    .img-slider{
+        height: 200px;
+    }
+    .img-slider .navigation{
+        bottom: 10px;
+    }
+    
+}
+
