@@ -892,7 +892,6 @@ body{
   z-index: 1;
   width: 90%;
   border-radius: 5px;
-  margin: 0 auto;
   max-height: 500px;
   max-width: 1200px;
 }
@@ -1010,6 +1009,7 @@ body{
 
   .img-slider{
     height: 400px;
+    width: 95%;
   }
 
   .img-slider .slide img{
@@ -1020,12 +1020,14 @@ body{
 @media (max-width: 620px){
   .img-slider{
     height: 350px;
+    width: 95%;
   }
 }
 
 @media (max-width: 425px){
   .img-slider{
     height: 250px;
+    width: 95%;
   }
 }
 
@@ -1040,6 +1042,7 @@ body{
 
   .img-slider{
     height: 200px;
+    width: 95%;
   }
 
   .img-slider .navigation{
