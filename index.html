@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!--Header con Img + Barra -->
+    <!--Inicio Header-->
     <header class="flex items-end justify-end h-14 lg:pr-16 md:h-24 header">
         <div id="menuResponsiveBtn" class="mr-4 cursor-pointer lg:hidden ">
             <span class="w-12 h-12 iconify icon-menu" data-icon="eva:menu-outline"></span>
@@ -65,11 +65,11 @@
     <!-- Fin Section Hero Foot -->
 
     <!-- Inicio Seccion tratamientos -->
-    <section id="tratamientos" class="my-8 md:my-20 section-tratamientos ">
+    <section id="tratamientos" class="my-8 md:my-20 section-tratamientos">
         <h2 class="text-lg font-semibold text-center md:text-5xl tituloSeccion">Tratamientos corporales y faciales</h2>
         <!--Tratamientos Corporales-->
-        <article class="grid grid-cols-2 my-4 md:my-20 article1 " data-aos="fade-right">
-            <div class=" article1-left">
+        <article class="grid grid-cols-2 my-4 md:my-20 article1" >
+            <div class=" article1-left" data-aos="zoom-in-down">
                 <img class="article1-img "  src="./imagenes/TratamientosCorporales.png" alt="">
             </div>
             <div class="flex flex-col items-start justify-center md:pl-14 article1-right">
@@ -89,8 +89,8 @@
         </article>
 
         <!--Tratamientos Faciales-->
-        <article class="grid grid-cols-2 my-4 md:my-14 article2" data-aos="fade-left">
-            <div class="md:order-last article2-right">
+        <article class="grid grid-cols-2 my-4 md:my-14 article2" >
+            <div class="md:order-last article2-right" data-aos="zoom-in-down">
                 <img class="article2-right-img" src="./imagenes/TratamientosFaciales.png" alt="">
             </div>
             <div class="flex flex-col items-start justify-center md:pl-14 article2-left">
@@ -109,8 +109,8 @@
         </article>
 
         <!--Tratamientos con Cera-->
-        <article class="grid grid-cols-2 my-4 md:my-14 article3" data-aos="fade-right">
-            <div class="article3-left">
+        <article class="grid grid-cols-2 my-4 md:my-14 article3" >
+            <div class="article3-left " data-aos="zoom-in-down">
                 <img class="imgCera" src="./imagenes/Depilacion.png" alt="Depilacion">
             </div>
             <div class="flex flex-col items-start justify-start md:pt-28 article3-right">
@@ -127,23 +127,38 @@
     <!-- Fin Seccion tratamientos -->
 
 <!-- Inicio Carousel -->
-<h2 id="aparatos" class="mb-2 text-lg font-semibold text-center md:mb-8 md:text-5xl titulo-carousel">Aparatología</h2>
-<section class="img-slider">
-    <div class="slide active ">
+<h2 id="aparatos" class="mb-2 text-lg font-semibold text-center md:mb-8 md:text-5xl titulo-carousel">Aparatología</h2> 
+<section class="carousel">
+<div class="slider">
+    <div class="slide active">
       <img src="./imagenes/img1.png" alt="">
     </div>
-    <div class="slide ">
-        <img src="./imagenes/img2.png" alt="">
-      </div>
-      <div class="slide ">
-        <img src="./imagenes/img3.png" alt="">
-      </div>
-      
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-      </div>
+    <div class="slide">
+      <img src="./imagenes/img2.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./imagenes/img3.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./imagenes/img4.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="./imagenes/img5.png" alt="">
+    </div>
+    <!-- Navigation -->
+    <div class="navigation">
+        <div id="prev-btn" class="prev-btn"><span class="iconify " data-icon="ooui:previous-ltr"></span></div>
+        <div id="next-btn" class="next-btn"><span  class="iconify " data-icon="ooui:previous-rtl"></span></div>
+        
+    </div>
+    <div class="navigation-visibility">
+      <div class="slide-icon active"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+    </div>
+  </div>
 </section>
 <!-- Fin Carousel -->
 
@@ -189,7 +204,7 @@
 
                 <div class="ml-6 md:ml-12 icons-phone-mail">
                     <div class="mb-2 icon-tel-box">
-                        <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-phone" data-icon="charm:phone"></span>
+                       <a href="tel:+5493815959340"><span class="w-4 h-4 md:w-5 md:h-5 iconify icon-phone" data-icon="charm:phone"></span></a> 
                     </div>
                     <div class="mt-2 icon-mail-box">
                         <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-mail" data-icon="ci:mail"></span>
@@ -201,7 +216,7 @@
         <div class="flex items-center justify-between footer-center">
             <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
             <div class="flex items-center justify-center w-5 h-5 bg-white rounded-full md:w-10 md:h-10 icon-insta-box">
-                <span class="w-4 h-4 md:w-5 md:h-5 iconify icon-insta" data-icon="akar-icons:instagram-fill"></span>
+               <a target="_blank" href="https://www.instagram.com/adara1781/"><span class="w-4 h-4 md:w-5 md:h-5 iconify icon-insta" data-icon="akar-icons:instagram-fill"></span></a> 
             </div>
             <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
         </div>
