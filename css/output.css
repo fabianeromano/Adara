@@ -592,6 +592,10 @@ body{
   height: 1.5rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -614,6 +618,14 @@ body{
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .transform {
@@ -1192,6 +1204,10 @@ body{
     height: 1.75rem;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -1206,6 +1222,10 @@ body{
 
   .md\:w-7 {
     width: 1.75rem;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:flex-row {
