@@ -128,37 +128,46 @@
 
 <!-- Inicio Carousel -->
 <h2 id="aparatos" class="mb-2 text-lg font-semibold text-center md:mb-8 md:text-5xl titulo-carousel">Aparatología</h2> 
-<section class="carousel">
-<div class="slider">
-    <div class="slide active">
-      <img src="./imagenes/img1.png" alt="">
+<section class="carousel-prueba">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./imagenes/img1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img4.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img5.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img6.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img7.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./imagenes/img8.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="slide">
-      <img src="./imagenes/img2.png" alt="">
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
     </div>
-    <div class="slide">
-      <img src="./imagenes/img3.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="./imagenes/img4.png" alt="">
-    </div>
-    <div class="slide">
-      <img src="./imagenes/img5.png" alt="">
-    </div>
-    <!-- Navigation -->
-    <div class="navigation">
-        <div id="prev-btn" class="prev-btn"><span class="iconify " data-icon="ooui:previous-ltr"></span></div>
-        <div id="next-btn" class="next-btn"><span  class="iconify " data-icon="ooui:previous-rtl"></span></div>
-        
-    </div>
-    <div class="navigation-visibility">
-      <div class="slide-icon active"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-    </div>
-  </div>
 </section>
 <!-- Fin Carousel -->
 
@@ -192,36 +201,36 @@
         </div>
     </section>
     <!-- Fin Seccion Turnos -->
-
+    
     <!-- Inicio Footer -->
-    <footer id="contacto" class="flex items-center justify-center h-40 md:h-56 footer">
-        <div class="flex items-center justify-between footer-left">
-            <div class="flex justify-end mr-6 md:mr-12 footer-logo">
+    <footer id="contacto" class="flex flex-col items-center justify-center md:flex-row md:h-56 footer">
+        <div class="flex flex-col items-center justify-between md:flex-row footer-left">
+            <div class="flex items-center justify-center md:justify-end md:mr-12 footer-logo">
                 <img src="./imagenes/AdaraLogoFooter.png" alt="Adara Logo">
             </div>
-            <div class="flex icons-left">
-                <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+            <div class="flex justify-center mt-1 icons-left md:mt-0">
+                <img class="hidden footer-imgBarra md:block" src="./imagenes/barra-footer.png" alt="Barra Blanca">
 
-                <div class="ml-6 md:ml-12 icons-phone-mail">
-                    <div class="mb-2 icon-tel-box">
-                       <a href="tel:+5493756456411"><span class="w-4 h-4 md:w-5 md:h-5 iconify icon-phone" data-icon="charm:phone"></span></a> 
+                <div class="flex flex-row items-center justify-center md:flex-col md:ml-12 icons-phone-mail">
+                    <div class="flex items-center justify-center w-6 h-auto mx-1 md:mb-2 icon-tel-box">
+                       <a href="tel:+5493756456411"><span class="w-6 h-auto md:w-6 md:h-6 iconify icon-phone" data-icon="charm:phone"></span></a> 
                     </div>
-                    <div class="mt-2 icon-mail-box">
-                        <a href="mailto:cristinaoca@gmail.com?Subject=Hola%20Adara%20necesito%20información"><span class="w-4 h-4 md:w-5 md:h-5 iconify icon-mail" data-icon="ci:mail"></span></a>
+                    <div class="flex items-center justify-center w-6 h-auto mx-1 md:mt-2 icon-mail-box">
+                        <a href="mailto:cristinaoca@gmail.com?Subject=Hola%20Adara%20necesito%20información"><span class="w-6 h-auto md:w-6 md:h-6 iconify icon-mail" data-icon="ci:mail"></span></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="flex items-center justify-between footer-center">
-            <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
-            <div class="flex items-center justify-center w-5 h-5 bg-white rounded-full md:w-10 md:h-10 icon-insta-box">
-               <a target="_blank" href="https://www.instagram.com/adara1781/"><span class="w-4 h-4 md:w-5 md:h-5 iconify icon-insta" data-icon="akar-icons:instagram-fill"></span></a> 
+        <div class="flex items-center justify-center md:justify-between footer-center">
+            <img class="hidden footer-imgBarra md:flex" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+            <div class="flex items-center justify-center w-8 h-8 mt-2 bg-white rounded-full md:mt-0 md:w-10 md:h-10 icon-insta-box">
+               <a target="_blank" href="https://www.instagram.com/adara1781/"><span class="w-6 h-6 md:w-7 md:h-7 iconify icon-insta" data-icon="akar-icons:instagram-fill"></span></a> 
             </div>
-            <img class="footer-imgBarra" src="./imagenes/barra-footer.png" alt="Barra Blanca">
+            <img class="hidden footer-imgBarra md:flex" src="./imagenes/barra-footer.png" alt="Barra Blanca">
         </div>
 
-        <div class="flex items-center justify-center footer-right">
+        <div class="flex items-center justify-center mt-2 md:mt-0 footer-right">
             <img class=" footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/LidhermaFooter.png" alt="">
             <img class=" footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/ExelFooter.png" alt="">
             <img class=" footer-marcas-img xl:mx-4 lg:mx-2" src="./imagenes/IdraetFooter.png" alt="">
@@ -239,7 +248,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 
 </body>
 

@@ -73,90 +73,77 @@ color: #3C3C3C;
 .titulo-carousel{
     color: #3C3C3C;
 }
-.carousel{
+.carousel-prueba{
     background-color: #B2BBB7;
+    padding-top: 20px;
 }
-.slider{
-    position: relative;
-    background: #B2BBB7;
-    width: 98vw;
-    /* min-height: 200px; */
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  
-  .slider .slide{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(0% at 0 50%);
-  }
-  
-  .slider .slide.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
-  }
-  
-  .slider .slide img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  
-  .navigation{
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .slider:hover .navigation{
-    opacity: 1;
-  }
-  
-  .prev-btn, .next-btn{
-    z-index: 999;
-    font-size: 2em;
-    color: #222;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .prev-btn{
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-  
-  .next-btn{
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-  
-  .navigation-visibility{
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navigation-visibility .slide-icon{
-    z-index: 999;
-    background: rgba(255, 255, 255, 0.5);
-    width: 12px;
-    height: 12px;
-    transform: translateY(-50px);
-    margin: 0 6px;
-    border-radius: 50%;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
-  
-  .navigation-visibility .slide-icon.active{
-    background: blue;
-  }
+
+.mySlides {
+    display: none
+}
+.mySlides img {
+    vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #959595;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: white;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 /* Seccion Marcas */
 .marcas-titulo, .marcas-subtitulo, .marcas-description{
@@ -218,9 +205,6 @@ width: 50%;
     .footer-marcas-img{
         width: 20%;
     }
-    .navigation{
-        height: 550px;
-    }
 }
 
 @media (max-width: 768px){
@@ -230,21 +214,19 @@ width: 50%;
     .footer-marcas-img{
         width: 30%;
     }
-    .navigation{
-        height: 440px;
-    }
    
 }
 
 @media (max-width: 620px){
-    .navigation{
-        height: 390px;
-    }
+    .prev, .next {font-size: 14px}
 }
 @media (max-width: 425px){
-    .navigation{
-        height: 300px;
-    }
+    .prev, .next {
+        font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
 }
 
 @media (max-width: 375px){
@@ -252,11 +234,7 @@ width: 50%;
         width: 30%;
     }
     .footer-marcas-img{
-        width: 30%;
-    }
-    .navigation{
-        height: 270px;
+        width: 40%;
     }
 }
-
 
